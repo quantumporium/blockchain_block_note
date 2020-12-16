@@ -16,3 +16,8 @@ python blockchain.py
 ## what to improve.
 - The template and interface could be improve
 - Implement decentralisation in my project.
+
+## credit
+This project was made whith inspiration and help from some course and tutorial that you can see below.
+- [here](https://www.activestate.com/blog/how-to-build-a-blockchain-in-python/)
+- [here](https://developer.ibm.com/technologies/blockchain/tutorials/develop-a-blockchain-application-from-scratch-in-python/)
