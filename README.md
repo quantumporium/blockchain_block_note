@@ -7,6 +7,12 @@ To make it work you need to run the python file that is in the directory __block
 
 - After that you can add transaction and mine a block.
 
+```python
+# this should make the blockchain.py file work
+python blockchain.py
+
+```
+
 ## what to improve.
 - The template and interface could be improve
 - Implement decentralisation in my project.
