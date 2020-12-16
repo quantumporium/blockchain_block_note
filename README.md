@@ -3,4 +3,4 @@ This is a simple implementation of a blockchain. If you whant to know more about
 
 
 ## How to make it work.
-To make it work you need to 
+To make it work you need to run the python file that is in the directory 
