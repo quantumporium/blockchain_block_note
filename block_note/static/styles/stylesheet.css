@@ -1,0 +1,132 @@
+* {
+    line-height: 1.5em;
+
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    margin: none;
+}
+
+header {
+    text-align: center;
+    height: 72px;
+}
+
+form {
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+
+    margin: auto;
+    display: block;
+}
+
+.article {
+    width: 80%;
+    margin: auto;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.transaction_form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.form_button {
+    display: block;
+
+    width: 100px;
+
+    margin: 10px;
+
+    border: 1px black solid;
+    background: none;
+}
+
+.transaction_in_block {
+    width: 100%;
+    height: 200px;
+
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.float_article {
+    margin-bottom: 10px;
+    overflow: auto;
+    clear: both;
+}
+
+.text_float {
+    width: 45%;
+    float: left;
+}
+
+.float_img {
+    width: 50%;
+    float: right;
+}
+
+.transaction_in_block_h2 {
+    position: sticky;
+}
+
+.transaction_element {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 5px;
+
+    border: 1px black solid;
+}
+
+.transaction_in_block_element_section {
+    box-sizing: border-box;
+
+    width: 80%;
+
+    margin: auto;
+    margin-top: 20px;
+
+    overflow: auto;
+
+    border: 1px black solid;
+}
+
+footer{
+    margin-top: 200px;
+    clear: both;
+
+    text-align: center;
+    max-height: 40px;
+}
+
+small {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.see_block {
+    width: 80%;
+    margin: auto;
+}

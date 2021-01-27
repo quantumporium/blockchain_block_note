@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Block note</title>
+
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
+    </head>
+
+    <body>
+        <header>
+            <h1>Block Note</h1>
+            <h4><a href="/">Home</a></h4>
+
+            <hr>
+        </header>
+        <div>
+            <h2>see transaction</h2>
+        </div>
+
+        <!-- list of all transaction -->
+        <div class='list_transaction_container'>
+                {% for block in see_block %}
+                    <div class='see_block'> <div class="transaction_element"><p>Block[{{block.index}}]: {{block.block_hash}}</p><br><p>Transaction: {{block.transactions}}</p></div> </div>
+            
+                {% endfor %}
+
+        </div>
+
+    </body>
+</html>

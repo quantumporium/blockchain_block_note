@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Block note</title>
+
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
+    </head>
+
+    <body>
+        <header>
+            <h1>Block Note</h1>
+            <h4><a href="see_block.html">See the chain</a></h4>
+
+            <hr>
+        </header>
+
+        <nav class="article">
+            <h2>What is block note</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus tempora voluptatem quis eaque. Nisi, quod. Corrupti in molestiae rerum aliquid reiciendis, sapiente obcaecati repellat qui quaerat suscipit reprehenderit corporis commodi temporibus! Repellendus, est. Mollitia neque esse eligendi! Adipisci delectus voluptate corporis veniam, molestiae reprehenderit eveniet, rem animi corrupti consequatur quia numquam possimus minima perferendis vitae sunt fuga magnam at ad officia debitis quam! Libero numquam corrupti atque neque dolorem aliquid hic sit similique. Voluptates aperiam dolorum omnis similique ut voluptas animi ducimus, laboriosam natus, reprehenderit nihil aliquam quidem. Ex tenetur est vitae odit sapiente maxime, ipsum debitis incidunt quisquam, reprehenderit blanditiis nostrum dicta fuga vel voluptatem id quibusdam numquam natus unde quae explicabo! Temporibus explicabo officia, voluptatibus quod in cumque veniam asperiores, inventore dolor ipsa similique necessitatibus vel fuga officiis ad aspernatur nemo nulla dolores et nihil! Qui dolore et reprehenderit voluptatibus cupiditate, corrupti dicta fugit quam vel sit natus.</p>
+        </nav>
+
+        <nav class="article" class="transaction_form">
+            <h2>Make transaction</h2>
+
+            <form method="POST" >
+                <textarea name='transaction_area' placeholder="Type something" id = "textarea_form">
+
+                </textarea>
+
+                <button class='form_button' name="form_btn_name" value='add_transaction_btn' id="add_transaction_button">add transaction</button>
+                <button class="form_button" name="form_btn_name" value='make_block_btn' >add block</button>
+            </form>
+
+            <div class="transaction_in_block">
+                <h2 class="transaction_in_block_h2">Transaction for block <a id="index_block">{{block_id + 1}}</a></h2>
+
+                <div id="transaction_in_block_element_section">
+                    <div class="transaction_element"><p>This is an example and it is not a transaction it show how the transaction will look.</p></div>
+                    {% for transaction in transaction_chain %}
+                        <div class="transaction_element"><p>{{transaction}}</p></div>
+
+                    {% endfor %}
+
+                </div>    
+            </div>
+        </nav>
+
+        <nav class="article">
+            <h2>How does it work</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit blanditiis quibusdam vitae. Consequatur illum dolorum quibusdam magni aliquid voluptate quod beatae recusandae similique ut! Dolorum dolor aut voluptas iusto impedit quisquam, inventore dignissimos suscipit, perferendis modi sapiente ea rerum vero nostrum laborum mollitia. Explicabo culpa optio, et repellat quo nam dolorem quam modi eaque, quae eos amet laboriosam ducimus enim, consequatur architecto dolorum animi iste eligendi. Reiciendis tempora vero dolor dolore. Voluptas harum, perspiciatis nemo, ipsam quaerat eligendi voluptatibus corrupti soluta eos, accusantium rem nihil tenetur voluptates eum ut saepe assumenda similique quibusdam est impedit vero modi repellat quod. Quo quis id nobis voluptas ducimus? Sed minima quo quod maiores in saepe autem adipisci. Soluta temporibus maiores voluptate? Id a quas, pariatur itaque, adipisci deleniti consequuntur enim placeat molestias possimus sit voluptatibus necessitatibus consequatur nulla nihil iste expedita delectus officia voluptatum natus dolorem ex dolore. Officiis reiciendis autem, nulla perspiciatis ratione minima quibusdam dignissimos ut sapiente dolorem accusamus totam recusandae mollitia rem, repellendus similique veritatis maiores, at impedit eius. Dolorem numquam expedita magnam dolorum voluptas. Deleniti nisi culpa ex corporis quae doloribus porro quam ipsum distinctio architecto totam ratione odit in magni saepe, a illo voluptate itaque! Iure, eius atque.</p>
+        </nav>
+
+        <nav class="article" class="float_article">
+            <div class="text_float">
+                <h2>See our whitepaper</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum repudiandae sunt incidunt dignissimos laudantium, quam assumenda molestias praesentium. Asperiores dolorum aut nihil natus, laborum animi excepturi quisquam ea voluptate fugit porro cum possimus aspernatur a fuga, maiores omnis quod corporis officiis ab iste! Qui aperiam nisi atque laudantium dolor!</p>
+            </div>
+            <div class ="float_img">
+                <a href=#><img width='200px' src="{{url_for('static', filename='img/whitepaper_img.png')}}"/></a>
+            </div>
+        </nav>
+
+        <footer>
+            <hr>
+            <small><a href="#">go see my github</a></small>
+            <small><a href="#">go see my linkedin</a></small>
+        </footer>
+
+        <script type="text/javascript" src="{{url_for('static', filename='javascript/main.js') }}"></script>
+    </body>
+</html>
